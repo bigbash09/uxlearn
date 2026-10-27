@@ -1,0 +1,56 @@
+# Builds UX Terms for Android and iOS on every push, and on demand from the Actions tab.
+# Download the results from the run's "Artifacts" section.
+name: Build apps
+
+on:
+  push:
+  workflow_dispatch:
+
+env:
+  FLUTTER_VERSION: "3.47.8"
+
+jobs:
+  android:
+    name: Android (APK + App Bundle)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build apk --release
+      - run: flutter build appbundle --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ux-terms-android
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
+
+  ios:
+    name: iOS (unsigned build)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter build ios --release --no-codesign
+      - name: Zip the app
+        run: cd build/ios/iphoneos && zip -r ../../../ux-terms-ios-unsigned.zip Runner.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ux-terms-ios-unsigned
+          path: ux-terms-ios-unsigned.zip

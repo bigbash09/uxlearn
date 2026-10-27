@@ -1,0 +1,1738 @@
+{
+ "tracks": [
+  {
+   "id": "dt",
+   "title": "Design Thinking",
+   "sub": "The five-stage process",
+   "blurb": "A human-centred way to frame problems and test ideas quickly. Start here.",
+   "lessons": [
+    {
+     "id": "empathize",
+     "t": "Empathize",
+     "s": "Understand people before you design for them.",
+     "m": 4,
+     "c": "Empathy is the work of understanding what people do, think and feel in their own context. You set aside your assumptions and gather evidence through interviews, observation and immersion.",
+     "e": "A team redesigning a campus dining app spends a lunch hour watching students order. Most people order one-handed while carrying a tray, which no survey had revealed.",
+     "y": "Interview one classmate for 10 minutes about how they plan their week. Ask \"Tell me about the last time…\" instead of \"Would you…\". Write down three quotes word for word.",
+     "k": "Observe behaviour, not opinions. What people do tells you more than what they say."
+    },
+    {
+     "id": "define",
+     "t": "Define",
+     "s": "Turn research into a clear problem statement.",
+     "m": 4,
+     "c": "In the Define stage you synthesise findings into a point-of-view statement: a specific user, their need, and the insight behind it. A sharp problem statement keeps the team from solving the wrong thing.",
+     "e": "\"Commuter students need a way to find a quiet study spot between classes because the library fills up by 10am.\" It names who, what and why.",
+     "y": "Write a \"How might we…\" question from your interview notes. Make it narrow enough to act on and broad enough to allow many answers.",
+     "k": "A good problem statement is about people, not features."
+    },
+    {
+     "id": "ideate",
+     "t": "Ideate",
+     "s": "Generate many ideas before judging any.",
+     "m": 3,
+     "c": "Ideation means producing lots of possible solutions first, then clustering and choosing. Useful methods include brainstorming, Crazy 8s, mind maps and SCAMPER.",
+     "e": "In Crazy 8s you fold a sheet into eight panels and sketch eight ideas in eight minutes. The time limit stops you from polishing the first idea.",
+     "y": "Run a solo Crazy 8s on your \"How might we\" question. Circle the idea you would test first and the one that scares you most.",
+     "k": "Defer judgement. The best idea is rarely the first one."
+    },
+    {
+     "id": "prototype",
+     "t": "Prototype",
+     "s": "Make ideas real enough to test.",
+     "m": 4,
+     "c": "A prototype is a cheap, testable version of an idea. Low fidelity (paper, wireframes) answers \"does this make sense?\". High fidelity (interactive Figma) answers \"does this feel right?\".",
+     "e": "A paper prototype of a checkout flow can be tested in an afternoon. Changing a step costs a pencil line instead of a sprint.",
+     "y": "Sketch the three key screens of your idea on paper or in FigJam. Link them so someone can tap through the main task.",
+     "k": "Build only what you need to learn the next thing."
+    },
+    {
+     "id": "test",
+     "t": "Test",
+     "s": "Watch real people use your prototype.",
+     "m": 4,
+     "c": "Testing puts your prototype in front of real users to see where they succeed and struggle. You give a task, stay quiet and watch. Five users usually reveal most of the major usability problems.",
+     "e": "A student tester tries to \"book a study room\" and taps the calendar icon three times before finding the button. That hesitation is your data.",
+     "y": "Give your prototype to two people. Ask them to think aloud while completing one task. Note every pause, wrong tap and question.",
+     "k": "Testing feeds back into empathy, and the loop starts again."
+    }
+   ]
+  },
+  {
+   "id": "gestalt",
+   "title": "Gestalt Principles",
+   "sub": "How eyes group what they see",
+   "blurb": "Six principles of visual perception that explain why layouts feel organised or messy.",
+   "lessons": [
+    {
+     "id": "proximity",
+     "t": "The Law of Proximity",
+     "s": "Things close together look related.",
+     "m": 3,
+     "c": "Elements placed close together are seen as a group. Spacing alone can show structure without lines or boxes.",
+     "e": "On a sign-up form, each label sits closer to its own field than to the field above. Users instantly know which label belongs where.",
+     "y": "Open any app's settings screen. Find where spacing, not dividers, separates the groups.",
+     "k": "Space is a design element. Use it to show relationships."
+    },
+    {
+     "id": "similarity",
+     "t": "The Law of Similarity",
+     "s": "Things that look alike feel alike.",
+     "m": 3,
+     "c": "Elements that share colour, shape or size are perceived as related, even when they are spread apart.",
+     "e": "Every tappable link in an article is the same blue. Users learn the pattern once and spot links everywhere.",
+     "y": "Find a UI where two different actions look the same. How could you make the difference visible?",
+     "k": "Make things that work the same look the same."
+    },
+    {
+     "id": "closure",
+     "t": "The Law of Closure",
+     "s": "We complete shapes that are not there.",
+     "m": 3,
+     "c": "Our brains fill in missing parts to see a complete shape. Designers use this for logos and icons that feel simple yet whole.",
+     "e": "The IBM logo is built from horizontal stripes with gaps, yet we read solid letters.",
+     "y": "Sketch an icon for \"library\" with as few strokes as possible. Remove lines until it stops being recognisable.",
+     "k": "Suggest the shape and let the viewer complete it."
+    },
+    {
+     "id": "continuity",
+     "t": "The Law of Continuity",
+     "s": "The eye follows lines and curves.",
+     "m": 3,
+     "c": "The eye follows lines and curves, and prefers continuous paths over abrupt changes in direction.",
+     "e": "A card row that cuts the last card in half invites you to swipe for more. The Design Thinking row on this app's Home screen does exactly that.",
+     "y": "Look at three apps you use daily. Find one element that hints there is more content off-screen.",
+     "k": "Align elements along a path to guide the eye."
+    },
+    {
+     "id": "figure",
+     "t": "Figure and Ground",
+     "s": "We split scenes into object and background.",
+     "m": 3,
+     "c": "We separate what we see into a foreground object (figure) and a background (ground). Modals, cards and dimmed overlays rely on this.",
+     "e": "When a bottom sheet opens, the screen behind dims. The sheet becomes the figure and takes your focus.",
+     "y": "Open any term in the Glossary tab and notice how the dimmed background changes where you look.",
+     "k": "Contrast tells users what to look at first."
+    },
+    {
+     "id": "region",
+     "t": "Common Region",
+     "s": "A boundary makes a group.",
+     "m": 3,
+     "c": "Items inside the same bounded area are seen as a group, even when they are not close together or similar.",
+     "e": "Shopping sites put image, title and price inside one card, so they read as one product.",
+     "y": "Find a screen where a container groups items that look unrelated. Does it work?",
+     "k": "A boundary is a strong grouping cue. Use it sparingly."
+    }
+   ]
+  },
+  {
+   "id": "laws",
+   "title": "Laws of UX",
+   "sub": "Psychology behind usable interfaces",
+   "blurb": "Research-backed rules of thumb that explain how people perceive, decide and act.",
+   "lessons": [
+    {
+     "id": "fitts",
+     "t": "Fitts's Law",
+     "s": "Big, close targets are faster to hit.",
+     "m": 3,
+     "c": "The time to reach a target depends on its distance and size. Larger, closer targets are faster and easier to hit.",
+     "e": "On mobile, primary buttons sit within thumb reach at the bottom of the screen and often span the full width.",
+     "y": "Find the smallest button in an app you use. Apple recommends touch targets of at least 44×44 points.",
+     "k": "Make important targets big and easy to reach."
+    },
+    {
+     "id": "hicks",
+     "t": "Hick's Law",
+     "s": "More choices, slower decisions.",
+     "m": 3,
+     "c": "The time it takes to decide grows with the number and complexity of choices.",
+     "e": "Streaming apps show a short row of top picks before the full catalogue, so you can decide quickly.",
+     "y": "Count the options on a food delivery home screen. Which could be hidden until needed?",
+     "k": "Reduce choices, or break them into steps."
+    },
+    {
+     "id": "jakob",
+     "t": "Jakob's Law",
+     "s": "Users expect your app to work like others.",
+     "m": 3,
+     "c": "People spend most of their time on other products, so they expect yours to work the same way.",
+     "e": "The cart icon lives in the top-right corner. Moving it to be creative costs users time.",
+     "y": "List three conventions every shopping app follows. Would breaking any of them help users?",
+     "k": "Innovate where it matters. Follow conventions everywhere else."
+    },
+    {
+     "id": "miller",
+     "t": "Miller's Law",
+     "s": "Chunk information to help memory.",
+     "m": 3,
+     "c": "Working memory holds a limited number of items, roughly seven give or take two. Chunking content into groups makes it easier to process.",
+     "e": "Phone numbers are split into chunks: 555 012 3456 is easier to remember than 5550123456.",
+     "y": "Rewrite a long paragraph from your notes as three short chunks with headings.",
+     "k": "Chunk information. Don't treat \"seven\" as a hard limit for menus."
+    },
+    {
+     "id": "aesthetic",
+     "t": "Aesthetic-Usability Effect",
+     "s": "Beautiful feels easier to use.",
+     "m": 3,
+     "c": "People perceive attractive designs as easier to use and are more forgiving of small problems in them.",
+     "e": "In usability tests, polished prototypes can hide real issues because testers forgive them.",
+     "y": "Test the same flow as a wireframe and as a styled mockup. Compare the feedback you get.",
+     "k": "Beauty builds trust, but it can mask problems during testing."
+    },
+    {
+     "id": "doherty",
+     "t": "Doherty Threshold",
+     "s": "Respond in under 400 ms.",
+     "m": 3,
+     "c": "Productivity rises when a system responds in under about 400 milliseconds, so neither the person nor the computer is waiting.",
+     "e": "Skeleton screens and instant button feedback make apps feel fast while data is still loading.",
+     "y": "Tap through this app. Every tap responds immediately. Notice how that feels.",
+     "k": "Give feedback fast, even when the result takes longer."
+    }
+   ]
+  },
+  {
+   "id": "ai",
+   "title": "AI for Designers",
+   "sub": "Use AI as a creative partner",
+   "blurb": "How to use AI in research, ideation and prototyping, and how to design AI products responsibly.",
+   "lessons": [
+    {
+     "id": "ai-intro",
+     "t": "Where AI fits in design",
+     "s": "A collaborator, not a replacement.",
+     "m": 4,
+     "c": "AI tools can speed up research synthesis, ideation, copywriting, image generation and prototyping. They work best as a collaborator: you set direction and judge quality, the tool produces options.",
+     "e": "A designer pastes 20 anonymised interview notes into an AI assistant, asks for recurring themes, then checks every theme against the original quotes.",
+     "y": "List the steps of your last design project. Mark where AI could save time and where human judgement is essential.",
+     "k": "AI speeds up the work. Your judgement decides what is good."
+    },
+    {
+     "id": "ai-prompt",
+     "t": "Prompting for designers",
+     "s": "Role, context, task, constraints, format.",
+     "m": 4,
+     "c": "A strong prompt gives a role, context, a clear task, constraints and the format you want back. Vague prompts get generic output.",
+     "e": "Weak: \"Give me app ideas.\" Strong: \"You are a UX researcher. Based on these five pain points from first-year students, suggest 10 How might we questions, each under 15 words.\"",
+     "y": "Rewrite one vague prompt using role, context, task, constraints and format. Compare both outputs side by side.",
+     "k": "Be specific, and iterate on prompts the way you iterate on designs."
+    },
+    {
+     "id": "ai-research",
+     "t": "AI in research and synthesis",
+     "s": "Fast clustering, careful checking.",
+     "m": 4,
+     "c": "AI can transcribe interviews, cluster notes into affinity groups and draft personas. It can also invent details, so verify everything against your raw data.",
+     "e": "An AI-generated persona says students \"prefer dark mode\". No participant said that. The model made it up.",
+     "y": "Ask an AI tool to summarise a set of notes. Highlight every claim you cannot trace back to a source.",
+     "k": "Only use findings you can trace to real evidence, and protect participants' privacy."
+    },
+    {
+     "id": "ai-proto",
+     "t": "Generative UI and rapid prototyping",
+     "s": "Generate wide, refine deep.",
+     "m": 4,
+     "c": "Tools such as Figma's AI features, Uizard and Claude can turn prompts or sketches into layouts and working prototypes. Use them to explore directions quickly, then refine by hand.",
+     "e": "A team generates five layout options for a dashboard in minutes, picks one, and rebuilds it properly in their design system.",
+     "y": "Describe your idea's main screen in one paragraph and ask an AI tool to build it. Critique the result using the Gestalt principles.",
+     "k": "Generate wide, then refine deep."
+    },
+    {
+     "id": "ai-products",
+     "t": "Designing AI-powered products",
+     "s": "Set expectations, keep users in control.",
+     "m": 4,
+     "c": "Users of AI features need to know what the system can do, how confident it is, and how to correct it. Google's People + AI Guidebook and Microsoft's HAX Toolkit collect proven patterns.",
+     "e": "A writing assistant shows suggestions in grey. You accept with Tab or ignore by typing, so you always stay in control.",
+     "y": "Pick an AI feature you use. How does it show errors or uncertainty? Sketch one improvement.",
+     "k": "Explain outputs, show confidence and always let users override."
+    },
+    {
+     "id": "ai-ethics",
+     "t": "Ethics, bias and authorship",
+     "s": "You are accountable for what you ship.",
+     "m": 4,
+     "c": "AI models learn from data that can carry bias. Designers need to check outputs for stereotypes, respect creators' rights and be open about where AI was used.",
+     "e": "An image generator asked for \"a designer\" returns mostly one gender and ethnicity. A responsible designer adjusts the prompt and reviews results.",
+     "y": "Generate eight images of \"a student studying\". Note who is represented and who is missing.",
+     "k": "You are accountable for your work, whoever or whatever generated it."
+    }
+   ]
+  },
+  {
+   "id": "xr",
+   "title": "Immersive & Emerging Tech",
+   "sub": "VR, AR, spatial and game UX",
+   "blurb": "Design beyond the flat screen: extended reality, 3D prototyping, games and voice.",
+   "lessons": [
+    {
+     "id": "xr-basics",
+     "t": "VR, AR and MR",
+     "s": "The extended reality spectrum.",
+     "m": 4,
+     "c": "Virtual reality replaces your surroundings. Augmented reality overlays digital content on the real world. Mixed reality lets digital objects interact with physical space. Together they are called extended reality, or XR.",
+     "e": "IKEA Place uses AR to put true-to-scale furniture in your room before you buy it.",
+     "y": "Try one AR experience on your phone, such as a measuring or furniture app. Note what felt natural and what felt awkward.",
+     "k": "Choose the medium that fits the task, not the hype."
+    },
+    {
+     "id": "xr-spatial",
+     "t": "Spatial UI principles",
+     "s": "Design for bodies, not just screens.",
+     "m": 4,
+     "c": "In XR the interface lives in 3D space. Place content at a comfortable distance, avoid making people look sharply up or down, and keep text large with strong contrast.",
+     "e": "Apple's visionOS guidelines place windows in front of the user at a comfortable distance and use eye gaze plus a pinch to select.",
+     "y": "Sketch a floating menu for a VR museum tour. Where does it appear relative to the visitor's head and hands?",
+     "k": "Comfort comes first in spatial design."
+    },
+    {
+     "id": "xr-proto",
+     "t": "Prototyping in 3D",
+     "s": "No code needed to start.",
+     "m": 4,
+     "c": "You can prototype XR without code. ShapesXR, Bezi and Spline let you build and test spatial scenes. Unity and Unreal take them further.",
+     "e": "A student team builds a VR campus orientation tour in ShapesXR and tests it in a headset before writing any code.",
+     "y": "Open Spline in your browser and build a simple 3D card that tilts when you hover over it.",
+     "k": "Prototype in the medium. Flat mockups miss depth and scale."
+    },
+    {
+     "id": "xr-games",
+     "t": "UX for games",
+     "s": "Teach through play.",
+     "m": 4,
+     "c": "Game UX shapes how players learn, feel and stay engaged: onboarding, feedback, HUD clarity and difficulty curves. Celia Hodent's work applies cognitive science to player experience.",
+     "e": "Many platformers teach in the first level by introducing one mechanic at a time, with no text tutorial.",
+     "y": "Play the first five minutes of a game. List each thing it teaches you and how it does it.",
+     "k": "Teach by doing. Feedback is how a game talks to the player."
+    },
+    {
+     "id": "xr-voice",
+     "t": "Voice and multimodal interfaces",
+     "s": "Pick the right input for the moment.",
+     "m": 4,
+     "c": "Interfaces increasingly combine voice, touch, gaze and gesture. Voice is fast for commands, touch is precise, and gaze is quick for pointing.",
+     "e": "A driver says \"navigate home\" instead of tapping through menus, keeping their eyes on the road.",
+     "y": "Script a short voice conversation for booking a study room. Plan what happens when the assistant mishears.",
+     "k": "Match the input to the context, and design for errors."
+    }
+   ]
+  }
+ ],
+ "resources": [
+  {
+   "id": "r-nng-dt",
+   "t": "Design Thinking 101",
+   "src": "Nielsen Norman Group",
+   "type": "article",
+   "topic": "dt",
+   "meta": "8 min read",
+   "url": "https://www.nngroup.com/articles/design-thinking/"
+  },
+  {
+   "id": "r-designkit",
+   "t": "Design Kit: Methods",
+   "src": "IDEO.org",
+   "type": "guide",
+   "topic": "dt",
+   "meta": "Method cards",
+   "url": "https://www.designkit.org/methods"
+  },
+  {
+   "id": "r-dschool",
+   "t": "d.school Resources",
+   "src": "Stanford d.school",
+   "type": "guide",
+   "topic": "dt",
+   "meta": "Toolkits & guides",
+   "url": "https://dschool.stanford.edu/resources"
+  },
+  {
+   "id": "r-ajsmart",
+   "t": "Design Sprint & workshop videos",
+   "src": "AJ&Smart · YouTube",
+   "type": "video",
+   "topic": "dt",
+   "meta": "Channel",
+   "url": "https://www.youtube.com/@AJSmart"
+  },
+  {
+   "id": "r-nng-yt",
+   "t": "UX explainer videos",
+   "src": "NN/g · YouTube",
+   "type": "video",
+   "topic": "gen",
+   "meta": "Short videos",
+   "url": "https://www.youtube.com/@NNgroup"
+  },
+  {
+   "id": "r-idf-gestalt",
+   "t": "Gestalt Principles",
+   "src": "Interaction Design Foundation",
+   "type": "article",
+   "topic": "gestalt",
+   "meta": "Topic guide",
+   "url": "https://www.interaction-design.org/literature/topics/gestalt-principles"
+  },
+  {
+   "id": "r-lawsofux",
+   "t": "Laws of UX",
+   "src": "Jon Yablonski",
+   "type": "guide",
+   "topic": "laws",
+   "meta": "Interactive site",
+   "url": "https://lawsofux.com"
+  },
+  {
+   "id": "r-uxcollective",
+   "t": "UX Collective",
+   "src": "Medium",
+   "type": "article",
+   "topic": "gen",
+   "meta": "Daily articles",
+   "url": "https://uxdesign.cc"
+  },
+  {
+   "id": "r-smashing",
+   "t": "Smashing Magazine",
+   "src": "Smashing Media",
+   "type": "article",
+   "topic": "gen",
+   "meta": "Articles",
+   "url": "https://www.smashingmagazine.com"
+  },
+  {
+   "id": "r-googledesign",
+   "t": "Google Design",
+   "src": "Google · YouTube",
+   "type": "video",
+   "topic": "gen",
+   "meta": "Channel",
+   "url": "https://www.youtube.com/@GoogleDesign"
+  },
+  {
+   "id": "r-figma-yt",
+   "t": "Figma tutorials",
+   "src": "Figma · YouTube",
+   "type": "video",
+   "topic": "gen",
+   "meta": "Channel",
+   "url": "https://www.youtube.com/@Figma"
+  },
+  {
+   "id": "r-google-cert",
+   "t": "Google UX Design Certificate",
+   "src": "Coursera",
+   "type": "course",
+   "topic": "gen",
+   "meta": "Beginner · self-paced",
+   "url": "https://www.coursera.org/professional-certificates/google-ux-design"
+  },
+  {
+   "id": "r-idf",
+   "t": "UX courses",
+   "src": "Interaction Design Foundation",
+   "type": "course",
+   "topic": "gen",
+   "meta": "Self-paced",
+   "url": "https://www.interaction-design.org/courses"
+  },
+  {
+   "id": "r-figma-edu",
+   "t": "Figma for Education",
+   "src": "Figma",
+   "type": "course",
+   "topic": "gen",
+   "meta": "Free for students",
+   "url": "https://www.figma.com/education/"
+  },
+  {
+   "id": "r-elements",
+   "t": "Elements of AI",
+   "src": "University of Helsinki",
+   "type": "course",
+   "topic": "ai",
+   "meta": "Free · beginner",
+   "url": "https://www.elementsofai.com"
+  },
+  {
+   "id": "r-pair",
+   "t": "People + AI Guidebook",
+   "src": "Google PAIR",
+   "type": "guide",
+   "topic": "ai",
+   "meta": "Patterns & worksheets",
+   "url": "https://pair.withgoogle.com/guidebook"
+  },
+  {
+   "id": "r-hax",
+   "t": "HAX Toolkit",
+   "src": "Microsoft",
+   "type": "guide",
+   "topic": "ai",
+   "meta": "Guidelines for human-AI interaction",
+   "url": "https://www.microsoft.com/en-us/haxtoolkit/"
+  },
+  {
+   "id": "r-claude",
+   "t": "Claude",
+   "src": "Anthropic",
+   "type": "tool",
+   "topic": "ai",
+   "meta": "AI assistant",
+   "url": "https://claude.ai"
+  },
+  {
+   "id": "r-firefly",
+   "t": "Adobe Firefly",
+   "src": "Adobe",
+   "type": "tool",
+   "topic": "ai",
+   "meta": "Image generation",
+   "url": "https://firefly.adobe.com"
+  },
+  {
+   "id": "r-uizard",
+   "t": "Uizard",
+   "src": "Uizard",
+   "type": "tool",
+   "topic": "ai",
+   "meta": "AI UI generation",
+   "url": "https://uizard.io"
+  },
+  {
+   "id": "r-visionos",
+   "t": "Designing for visionOS",
+   "src": "Apple Human Interface Guidelines",
+   "type": "guide",
+   "topic": "xr",
+   "meta": "Spatial design",
+   "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos"
+  },
+  {
+   "id": "r-meta",
+   "t": "Horizon design guidelines",
+   "src": "Meta",
+   "type": "guide",
+   "topic": "xr",
+   "meta": "VR & MR design",
+   "url": "https://developers.meta.com/horizon/design/"
+  },
+  {
+   "id": "r-unity-learn",
+   "t": "Unity Learn",
+   "src": "Unity",
+   "type": "course",
+   "topic": "xr",
+   "meta": "Free · VR & games",
+   "url": "https://learn.unity.com"
+  },
+  {
+   "id": "r-shapesxr",
+   "t": "ShapesXR",
+   "src": "ShapesXR",
+   "type": "tool",
+   "topic": "xr",
+   "meta": "Prototype in VR",
+   "url": "https://www.shapesxr.com"
+  },
+  {
+   "id": "r-spline",
+   "t": "Spline",
+   "src": "Spline",
+   "type": "tool",
+   "topic": "xr",
+   "meta": "3D design in the browser",
+   "url": "https://spline.design"
+  },
+  {
+   "id": "r-bezi",
+   "t": "Bezi",
+   "src": "Bezi",
+   "type": "tool",
+   "topic": "xr",
+   "meta": "3D & XR prototyping",
+   "url": "https://bezi.com"
+  },
+  {
+   "id": "r-figma",
+   "t": "Figma",
+   "src": "Figma",
+   "type": "tool",
+   "topic": "gen",
+   "meta": "Design & prototyping",
+   "url": "https://www.figma.com"
+  },
+  {
+   "id": "r-maze",
+   "t": "Maze",
+   "src": "Maze",
+   "type": "tool",
+   "topic": "dt",
+   "meta": "Remote usability testing",
+   "url": "https://maze.co"
+  },
+  {
+   "id": "r-miro",
+   "t": "Miro",
+   "src": "Miro",
+   "type": "tool",
+   "topic": "dt",
+   "meta": "Whiteboarding & affinity maps",
+   "url": "https://miro.com"
+  },
+  {
+   "id": "r-doet",
+   "t": "The Design of Everyday Things",
+   "src": "Don Norman",
+   "type": "book",
+   "topic": "gen",
+   "meta": "Book",
+   "url": "https://openlibrary.org/search?q=the+design+of+everyday+things"
+  },
+  {
+   "id": "r-dmmt",
+   "t": "Don't Make Me Think",
+   "src": "Steve Krug",
+   "type": "book",
+   "topic": "laws",
+   "meta": "Book",
+   "url": "https://openlibrary.org/search?q=dont+make+me+think+krug"
+  },
+  {
+   "id": "r-gamersbrain",
+   "t": "The Gamer's Brain",
+   "src": "Celia Hodent",
+   "type": "book",
+   "topic": "xr",
+   "meta": "Book",
+   "url": "https://openlibrary.org/search?q=the+gamer%27s+brain+hodent"
+  }
+ ],
+ "terms": [
+  {
+   "id": "ab-testing",
+   "t": "A/B testing",
+   "cat": "Research",
+   "d": "Showing two versions of a design to different groups of users to see which performs better against a goal.",
+   "ex": "Testing two button labels, \"Join\" and \"Get started\", to see which gets more sign-ups.",
+   "lesson": null
+  },
+  {
+   "id": "accessibility",
+   "t": "Accessibility",
+   "cat": "Interaction",
+   "d": "Designing so people with disabilities can perceive, understand and use a product. Often shortened to a11y.",
+   "ex": "Adding text alternatives to images so screen reader users hear what the image shows.",
+   "lesson": null
+  },
+  {
+   "id": "affinity-diagram",
+   "t": "Affinity diagram",
+   "cat": "Research",
+   "d": "A way to organise research notes by grouping related observations to reveal themes.",
+   "ex": "Clustering 60 sticky notes from interviews into groups like \"time pressure\" and \"cost\".",
+   "lesson": "define"
+  },
+  {
+   "id": "affordance",
+   "t": "Affordance",
+   "cat": "Interaction",
+   "d": "A property of an object that suggests how it can be used.",
+   "ex": "A raised button looks pressable. A slider handle looks draggable.",
+   "lesson": null
+  },
+  {
+   "id": "ar",
+   "t": "Augmented reality (AR)",
+   "cat": "XR",
+   "d": "Technology that overlays digital content on a live view of the real world.",
+   "ex": "Seeing a virtual sofa placed in your living room through your phone camera.",
+   "lesson": "xr-basics"
+  },
+  {
+   "id": "cta",
+   "t": "Call to action (CTA)",
+   "cat": "Interaction",
+   "d": "The element that prompts the user to take the main next step.",
+   "ex": "\"Start lesson\" is the call to action on a course page.",
+   "lesson": null
+  },
+  {
+   "id": "card-sorting",
+   "t": "Card sorting",
+   "cat": "Research",
+   "d": "A method where participants group topics into categories to help shape information architecture.",
+   "ex": "Students sort 30 course topics into groups that make sense to them.",
+   "lesson": null
+  },
+  {
+   "id": "cognitive-load",
+   "t": "Cognitive load",
+   "cat": "Visual",
+   "d": "The mental effort needed to use an interface. Lower load means easier use.",
+   "ex": "A form that asks for one thing per screen reduces cognitive load.",
+   "lesson": "miller"
+  },
+  {
+   "id": "contrast-ratio",
+   "t": "Contrast ratio",
+   "cat": "Visual",
+   "d": "The difference in brightness between text and its background. WCAG asks for at least 4.5:1 for normal text.",
+   "ex": "Light grey text on white often fails the 4.5:1 minimum.",
+   "lesson": null
+  },
+  {
+   "id": "dark-pattern",
+   "t": "Dark pattern",
+   "cat": "Interaction",
+   "d": "A design that tricks users into doing something they did not intend.",
+   "ex": "A pre-ticked box that signs you up for marketing emails.",
+   "lesson": null
+  },
+  {
+   "id": "design-system",
+   "t": "Design system",
+   "cat": "Visual",
+   "d": "A shared set of reusable components, styles and guidelines that keeps a product consistent.",
+   "ex": "Google's Material Design is a public design system.",
+   "lesson": null
+  },
+  {
+   "id": "empathy-map",
+   "t": "Empathy map",
+   "cat": "Research",
+   "d": "A canvas that captures what a user says, thinks, does and feels.",
+   "ex": "Filling in an empathy map right after a user interview.",
+   "lesson": "empathize"
+  },
+  {
+   "id": "fidelity",
+   "t": "Fidelity",
+   "cat": "Process",
+   "d": "How closely a prototype resembles the final product, from low (sketches) to high (interactive and polished).",
+   "ex": "Paper sketches are low fidelity. A clickable Figma prototype is high fidelity.",
+   "lesson": "prototype"
+  },
+  {
+   "id": "fov",
+   "t": "Field of view (FOV)",
+   "cat": "XR",
+   "d": "The extent of the scene visible at one time in a headset, measured in degrees.",
+   "ex": "Placing key UI in the centre of the field of view so users don't turn their heads.",
+   "lesson": "xr-spatial"
+  },
+  {
+   "id": "generative-ai",
+   "t": "Generative AI",
+   "cat": "AI",
+   "d": "AI that creates new content such as text, images, audio or code from a prompt.",
+   "ex": "Generating mood board images from a text description.",
+   "lesson": "ai-intro"
+  },
+  {
+   "id": "hallucination",
+   "t": "Hallucination",
+   "cat": "AI",
+   "d": "When an AI model produces confident but false or made-up information.",
+   "ex": "An AI summary quoting a participant who never said that.",
+   "lesson": "ai-research"
+  },
+  {
+   "id": "heuristic-evaluation",
+   "t": "Heuristic evaluation",
+   "cat": "Research",
+   "d": "An expert review of an interface against established usability principles, such as Nielsen's 10 heuristics.",
+   "ex": "Checking whether every error message explains how to recover.",
+   "lesson": null
+  },
+  {
+   "id": "hmw",
+   "t": "How might we (HMW)",
+   "cat": "Process",
+   "d": "A question format that reframes a problem as an opportunity for ideas.",
+   "ex": "\"How might we help commuter students find quiet study spots?\"",
+   "lesson": "define"
+  },
+  {
+   "id": "hitl",
+   "t": "Human in the loop",
+   "cat": "AI",
+   "d": "A setup where people review, correct or approve AI output before it takes effect.",
+   "ex": "A designer approves AI-generated alt text before publishing.",
+   "lesson": "ai-products"
+  },
+  {
+   "id": "ia",
+   "t": "Information architecture (IA)",
+   "cat": "Process",
+   "d": "How content is organised, labelled and connected so people can find what they need.",
+   "ex": "The map of screens in this app: Home, Learn, Glossary, Resources, Progress.",
+   "lesson": null
+  },
+  {
+   "id": "iteration",
+   "t": "Iteration",
+   "cat": "Process",
+   "d": "Repeating a cycle of design, test and refine to improve a product step by step.",
+   "ex": "Version 3 of a prototype fixes issues found while testing version 2.",
+   "lesson": "test"
+  },
+  {
+   "id": "journey-map",
+   "t": "Journey map",
+   "cat": "Research",
+   "d": "A visual of the steps a person goes through to reach a goal, including their feelings at each step.",
+   "ex": "Mapping a freshman's first week, from orientation to the first assignment.",
+   "lesson": null
+  },
+  {
+   "id": "llm",
+   "t": "Large language model (LLM)",
+   "cat": "AI",
+   "d": "An AI model trained on large amounts of text to understand and generate language.",
+   "ex": "Claude and other chat assistants are built on LLMs.",
+   "lesson": "ai-intro"
+  },
+  {
+   "id": "mental-model",
+   "t": "Mental model",
+   "cat": "Interaction",
+   "d": "A person's internal understanding of how something works, which shapes their expectations.",
+   "ex": "People expect a trash icon to delete things.",
+   "lesson": "jakob"
+  },
+  {
+   "id": "microinteraction",
+   "t": "Microinteraction",
+   "cat": "Interaction",
+   "d": "A small, focused moment of feedback for a single action.",
+   "ex": "A heart icon that pops when you like a post.",
+   "lesson": null
+  },
+  {
+   "id": "mvp",
+   "t": "Minimum viable product (MVP)",
+   "cat": "Process",
+   "d": "The simplest version of a product that delivers value and lets you learn from real users.",
+   "ex": "Launching with only the glossary before adding lessons.",
+   "lesson": null
+  },
+  {
+   "id": "mr",
+   "t": "Mixed reality (MR)",
+   "cat": "XR",
+   "d": "Experiences where digital objects are anchored to, and interact with, the physical world.",
+   "ex": "A virtual ball that bounces off your real table.",
+   "lesson": "xr-basics"
+  },
+  {
+   "id": "mockup",
+   "t": "Mockup",
+   "cat": "Process",
+   "d": "A static, visually detailed picture of a design that shows how it will look.",
+   "ex": "A polished Figma frame of the home screen without interactions.",
+   "lesson": null
+  },
+  {
+   "id": "onboarding",
+   "t": "Onboarding",
+   "cat": "Interaction",
+   "d": "The first experience that helps new users understand and start using a product.",
+   "ex": "A three-step intro that asks students which track to start with.",
+   "lesson": null
+  },
+  {
+   "id": "pain-point",
+   "t": "Pain point",
+   "cat": "Research",
+   "d": "A specific problem or frustration a user experiences.",
+   "ex": "\"I can never find which room my seminar is in.\"",
+   "lesson": "empathize"
+  },
+  {
+   "id": "persona",
+   "t": "Persona",
+   "cat": "Research",
+   "d": "A fictional profile based on research that represents a key group of users.",
+   "ex": "\"Maya, 18, first-gen student, studies on the bus.\"",
+   "lesson": "define"
+  },
+  {
+   "id": "presence",
+   "t": "Presence",
+   "cat": "XR",
+   "d": "The feeling of actually being inside a virtual environment.",
+   "ex": "Flinching when a virtual object flies toward you.",
+   "lesson": "xr-basics"
+  },
+  {
+   "id": "prompt",
+   "t": "Prompt",
+   "cat": "AI",
+   "d": "The instruction or input you give an AI model.",
+   "ex": "\"Suggest 10 names for a study app, each under 12 letters.\"",
+   "lesson": "ai-prompt"
+  },
+  {
+   "id": "prototype-term",
+   "t": "Prototype",
+   "cat": "Process",
+   "d": "An early, testable model of a design used to learn before building.",
+   "ex": "A clickable flow for booking a study room.",
+   "lesson": "prototype"
+  },
+  {
+   "id": "responsive",
+   "t": "Responsive design",
+   "cat": "Visual",
+   "d": "Layouts that adapt to different screen sizes and orientations.",
+   "ex": "A grid with three columns on desktop and one on a phone.",
+   "lesson": null
+  },
+  {
+   "id": "6dof",
+   "t": "Six degrees of freedom (6DoF)",
+   "cat": "XR",
+   "d": "Tracking that follows both head rotation and movement through space.",
+   "ex": "In a 6DoF headset you can lean in to look closer at an object.",
+   "lesson": "xr-spatial"
+  },
+  {
+   "id": "spatial-computing",
+   "t": "Spatial computing",
+   "cat": "XR",
+   "d": "Computing that understands and blends with the 3D space around you.",
+   "ex": "Apps placed as windows around your room in a headset.",
+   "lesson": "xr-spatial"
+  },
+  {
+   "id": "stakeholder",
+   "t": "Stakeholder",
+   "cat": "Process",
+   "d": "Anyone with an interest in a project's outcome, such as clients, users or team members.",
+   "ex": "A course instructor reviewing your app concept.",
+   "lesson": null
+  },
+  {
+   "id": "usability-testing",
+   "t": "Usability testing",
+   "cat": "Research",
+   "d": "Watching real users try tasks with a product to find problems.",
+   "ex": "Asking a student to find the Gestalt lesson while you observe.",
+   "lesson": "test"
+  },
+  {
+   "id": "user-flow",
+   "t": "User flow",
+   "cat": "Process",
+   "d": "The path a user takes through screens to complete a task.",
+   "ex": "Home → Lesson → Mark complete → Next lesson.",
+   "lesson": null
+  },
+  {
+   "id": "vr",
+   "t": "Virtual reality (VR)",
+   "cat": "XR",
+   "d": "A fully digital environment that replaces your view of the real world.",
+   "ex": "Touring a virtual campus in a headset.",
+   "lesson": "xr-basics"
+  },
+  {
+   "id": "hierarchy",
+   "t": "Visual hierarchy",
+   "cat": "Visual",
+   "d": "Arranging elements so their order of importance is clear through size, colour, contrast and position.",
+   "ex": "The page title is largest, then section headings, then body text.",
+   "lesson": null
+  },
+  {
+   "id": "white-space",
+   "t": "White space",
+   "cat": "Visual",
+   "d": "Empty space around and between elements that improves clarity and focus.",
+   "ex": "Generous margins around a key headline.",
+   "lesson": "proximity"
+  },
+  {
+   "id": "wireframe",
+   "t": "Wireframe",
+   "cat": "Process",
+   "d": "A simple, low-fidelity layout that shows structure without visual styling.",
+   "ex": "Grey boxes showing where the image, title and button go.",
+   "lesson": "prototype"
+  }
+ ],
+ "extra": {
+  "empathize": {
+   "hero": {
+    "img": "interview",
+    "alt": "A student interviews a classmate in a campus cafe, taking notes",
+    "cap": "A research interview: listen more than you talk."
+   },
+   "cm": {
+    "anim": "dtloop"
+   },
+   "deep": [
+    {
+     "k": "Methods",
+     "h": "Three ways to build empathy",
+     "p": [
+      "You rarely get empathy from one conversation. Designers combine methods so they see both what people say and what they actually do."
+     ],
+     "defs": [
+      [
+       "1",
+       "Interviews",
+       "One-on-one conversations. Ask open questions about real past experiences, then follow up with \"why?\""
+      ],
+      [
+       "2",
+       "Observation",
+       "Watch people in their real context, such as a library, a dorm or a bus, without interrupting."
+      ],
+      [
+       "3",
+       "Immersion",
+       "Do the task yourself. Try booking a study room on your phone while walking to class."
+      ]
+     ]
+    },
+    {
+     "k": "Tool",
+     "h": "The empathy map",
+     "media": {
+      "svg": "empathymap",
+      "cap": "Fill one quadrant at a time with notes from your research."
+     },
+     "p": [
+      "An empathy map sorts what you learned into four boxes: what the person says, thinks, does and feels. Gaps between \"says\" and \"does\" are often where the best insights hide."
+     ]
+    }
+   ],
+   "w": [
+    "Empathy in design thinking",
+    "empathy stage design thinking user interview tips"
+   ]
+  },
+  "define": {
+   "hero": {
+    "img": "affinity",
+    "alt": "Students cluster sticky notes into groups on a studio wall",
+    "cap": "Synthesis: turning a wall of notes into a few clear themes."
+   },
+   "cm": {
+    "anim": "affinity"
+   },
+   "deep": [
+    {
+     "k": "Formula",
+     "h": "Write a point-of-view statement",
+     "p": [
+      "Fill in the blanks:"
+     ],
+     "callout": "[User] needs [a way to do something] because [insight from research].",
+     "p2": [
+      "Example: \"First-year commuter students need a reliable way to find a quiet study spot between classes, because the library is full by 10am and they waste their only free hour searching.\""
+     ]
+    },
+    {
+     "k": "Reframe",
+     "h": "Turn it into \"How might we…\"",
+     "p": [
+      "A \"How might we\" question opens the problem up for ideas without suggesting a solution."
+     ],
+     "defs": [
+      [
+       "✕",
+       "Too broad",
+       "How might we improve studying?"
+      ],
+      [
+       "✕",
+       "Too narrow",
+       "How might we add a room map to the app?"
+      ],
+      [
+       "✓",
+       "Just right",
+       "How might we help commuters find a quiet spot in under five minutes?"
+      ]
+     ]
+    }
+   ],
+   "w": [
+    "Affinity diagrams and problem statements",
+    "affinity diagram design thinking define stage"
+   ]
+  },
+  "ideate": {
+   "hero": {
+    "img": "crazy8",
+    "alt": "A sheet folded into eight panels with eight quick app sketches and a timer",
+    "cap": "A finished Crazy 8s sheet: eight ideas, eight minutes."
+   },
+   "deep": [
+    {
+     "k": "Ground rules",
+     "h": "How good ideation works",
+     "p": [
+      "Whatever method you use, these rules keep ideas flowing:"
+     ],
+     "defs": [
+      [
+       "1",
+       "Go for quantity",
+       "Aim for many ideas. Good ones often appear after the obvious ones are out of the way."
+      ],
+      [
+       "2",
+       "Defer judgement",
+       "No \"that won't work\" yet. Critique comes later."
+      ],
+      [
+       "3",
+       "Build on others",
+       "Say \"yes, and…\" to extend a teammate's idea."
+      ],
+      [
+       "4",
+       "Encourage wild ideas",
+       "An impossible idea can point to a practical one."
+      ],
+      [
+       "5",
+       "Stay on topic",
+       "Keep your \"How might we\" question visible the whole time."
+      ]
+     ]
+    },
+    {
+     "k": "Method 1",
+     "h": "Brainstorming",
+     "p": [
+      "A short, focused group session, usually 15 to 20 minutes. Everyone writes one idea per sticky note, says it out loud, and puts it on the wall. One conversation at a time so ideas can build on each other.",
+      "Tip: brainstorm alone for five minutes first. Quieter teammates get their ideas down before louder voices set the direction."
+     ]
+    },
+    {
+     "k": "Method 2",
+     "h": "Crazy 8s",
+     "media": {
+      "anim": "crazy8"
+     },
+     "p": [
+      "A fast sketching exercise from the Google Ventures design sprint. It pushes you past your first idea."
+     ],
+     "steps": [
+      "Fold a sheet of paper into eight panels.",
+      "Set a timer for eight minutes.",
+      "Sketch one idea per panel, about one minute each.",
+      "Keep it rough. Boxes, arrows and stick figures are fine.",
+      "Share your sheet and dot-vote on the strongest ideas."
+     ]
+    },
+    {
+     "k": "Method 3",
+     "h": "Mind mapping",
+     "media": {
+      "svg": "mindmap",
+      "cap": "A mind map for \"quiet study spots\". Each branch is a theme you can explore."
+     },
+     "p": [
+      "Write the problem in the centre, then branch out into themes, and branch again into ideas. It helps you see connections and spot areas you have not explored yet."
+     ]
+    },
+    {
+     "k": "Method 4",
+     "h": "SCAMPER",
+     "media": {
+      "anim": "scamper"
+     },
+     "p": [
+      "SCAMPER is a checklist of seven questions that make you look at an existing product from new angles. Here it is applied to a study-room booking app:"
+     ],
+     "defs": [
+      [
+       "S",
+       "Substitute",
+       "What could you replace? Swap the login form for a student ID scan."
+      ],
+      [
+       "C",
+       "Combine",
+       "What could you merge? Combine room booking with your class calendar."
+      ],
+      [
+       "A",
+       "Adapt",
+       "What could you borrow? Adapt a restaurant waitlist for full study rooms."
+      ],
+      [
+       "M",
+       "Modify",
+       "What could be bigger or smaller? Show only the next free room, not a long list."
+      ],
+      [
+       "P",
+       "Put to other use",
+       "Where else could this work? Use booking data to show the quietest times."
+      ],
+      [
+       "E",
+       "Eliminate",
+       "What could you remove? Drop the confirmation email and show a QR pass."
+      ],
+      [
+       "R",
+       "Reverse",
+       "What if you flipped it? Let free rooms notify nearby students."
+      ]
+     ]
+    },
+    {
+     "k": "Choose",
+     "h": "Pick ideas to prototype",
+     "media": {
+      "svg": "matrix",
+      "cap": "Plot each idea by how much it helps users and how hard it is to build."
+     },
+     "p": [
+      "After you generate, converge. Dot-vote as a team, then place the winners on an impact and effort grid. Quick wins are easy to test first. Big bets may be worth a bolder prototype."
+     ]
+    }
+   ],
+   "w": [
+    "Crazy 8s and SCAMPER explained",
+    "crazy 8s sketching exercise design sprint"
+   ]
+  },
+  "prototype": {
+   "hero": {
+    "img": "paperproto",
+    "alt": "A hand slides a paper app screen into a paper phone frame",
+    "cap": "Paper prototypes are fast to make and easy to change."
+   },
+   "cm": {
+    "anim": "fidelity"
+   },
+   "deep": [
+    {
+     "k": "Choose fidelity",
+     "h": "Match the prototype to the question",
+     "defs": [
+      [
+       "L",
+       "Low fidelity",
+       "Paper or sketches. Is the flow understandable? Make it in minutes."
+      ],
+      [
+       "M",
+       "Mid fidelity",
+       "Grey-box wireframes in Figma. Is the layout and navigation right?"
+      ],
+      [
+       "H",
+       "High fidelity",
+       "Styled, clickable screens. Does it feel right? Is the copy clear?"
+      ]
+     ]
+    }
+   ],
+   "w": [
+    "Paper prototyping",
+    "paper prototyping ux tutorial"
+   ]
+  },
+  "test": {
+   "hero": {
+    "img": "usability",
+    "alt": "A student uses an app and thinks aloud while an observer takes notes",
+    "cap": "A think-aloud usability test."
+   },
+   "cm": {
+    "anim": "users"
+   },
+   "deep": [
+    {
+     "k": "How to run it",
+     "h": "A 20-minute usability test",
+     "steps": [
+      "Welcome the participant. Explain you are testing the design, not them.",
+      "Give a realistic task, like \"Book a study room for 3pm today.\"",
+      "Ask them to think aloud while they work.",
+      "Stay quiet. Don't help, even when they struggle.",
+      "Ask follow-up questions at the end: \"What did you expect to happen there?\"",
+      "Note every pause, wrong tap and question. Fix the biggest issues and test again."
+     ]
+    }
+   ],
+   "w": [
+    "Usability testing with think-aloud",
+    "think aloud usability testing nngroup"
+   ]
+  },
+  "proximity": {
+   "cm": {
+    "anim": "proximity"
+   },
+   "w": [
+    "Gestalt law of proximity",
+    "gestalt principle proximity ui design"
+   ]
+  },
+  "similarity": {
+   "cm": {
+    "anim": "similarity"
+   },
+   "w": [
+    "Gestalt law of similarity",
+    "gestalt principle similarity ui design"
+   ]
+  },
+  "closure": {
+   "cm": {
+    "anim": "closure"
+   },
+   "w": [
+    "Gestalt law of closure",
+    "gestalt principle closure logo design"
+   ]
+  },
+  "continuity": {
+   "w": [
+    "Gestalt law of continuity",
+    "gestalt principle continuity design"
+   ]
+  },
+  "figure": {
+   "w": [
+    "Figure and ground in design",
+    "figure ground gestalt principle design"
+   ]
+  },
+  "region": {
+   "w": [
+    "Common region in UI",
+    "gestalt common region ui design"
+   ]
+  },
+  "fitts": {
+   "cm": {
+    "anim": "fitts"
+   },
+   "w": [
+    "Fitts's Law explained",
+    "fitts law ux design explained"
+   ]
+  },
+  "hicks": {
+   "cm": {
+    "anim": "hicks"
+   },
+   "w": [
+    "Hick's Law explained",
+    "hicks law ux design explained"
+   ]
+  },
+  "jakob": {
+   "w": [
+    "Jakob's Law explained",
+    "jakobs law ux design"
+   ]
+  },
+  "miller": {
+   "cm": {
+    "anim": "miller"
+   },
+   "w": [
+    "Miller's Law and chunking",
+    "millers law chunking ux"
+   ]
+  },
+  "aesthetic": {
+   "w": [
+    "Aesthetic-usability effect",
+    "aesthetic usability effect nngroup"
+   ]
+  },
+  "doherty": {
+   "w": [
+    "Doherty Threshold",
+    "doherty threshold ux response time"
+   ]
+  },
+  "ai-intro": {
+   "hero": {
+    "img": "ai-desk",
+    "alt": "A design student works with an AI assistant on one screen and a design tool on the other",
+    "cap": "AI as a studio partner: you direct, it drafts."
+   },
+   "deep": [
+    {
+     "k": "Where it helps",
+     "h": "AI across the design process",
+     "defs": [
+      [
+       "E",
+       "Empathize",
+       "Transcribe and summarise interviews. You still read the transcripts."
+      ],
+      [
+       "D",
+       "Define",
+       "Cluster notes into themes and draft problem statements."
+      ],
+      [
+       "I",
+       "Ideate",
+       "Generate dozens of \"How might we\" angles and moodboard images."
+      ],
+      [
+       "P",
+       "Prototype",
+       "Turn a prompt or sketch into a first layout or working prototype."
+      ],
+      [
+       "T",
+       "Test",
+       "Draft test scripts and summarise session notes."
+      ]
+     ]
+    }
+   ],
+   "w": [
+    "AI tools for UX designers",
+    "ai tools for ux designers workflow"
+   ]
+  },
+  "ai-prompt": {
+   "cm": {
+    "anim": "prompt"
+   },
+   "w": [
+    "Prompting for designers",
+    "prompt engineering for ux designers"
+   ]
+  },
+  "ai-research": {
+   "hero": {
+    "img": "affinity",
+    "alt": "A team clusters research notes on a wall",
+    "cap": "AI can help cluster notes like these, but people check the result."
+   },
+   "w": [
+    "AI for UX research synthesis",
+    "ai ux research synthesis"
+   ]
+  },
+  "ai-proto": {
+   "hero": {
+    "img": "ai-layouts",
+    "alt": "A laptop shows a grid of six generated dashboard layouts",
+    "cap": "Generate many directions, then refine one by hand."
+   },
+   "w": [
+    "AI prototyping with Figma",
+    "figma ai prototyping tutorial"
+   ]
+  },
+  "ai-products": {
+   "w": [
+    "Designing human-AI interaction",
+    "people + ai guidebook google pair"
+   ]
+  },
+  "ai-ethics": {
+   "hero": {
+    "img": "ai-bias",
+    "alt": "Students review a wall of generated portraits and discuss who is represented",
+    "cap": "Reviewing generated images for bias as a team."
+   },
+   "w": [
+    "Bias in AI-generated images",
+    "ai image generator bias explained"
+   ]
+  },
+  "xr-basics": {
+   "hero": {
+    "img": "vr-student",
+    "alt": "A student in a VR headset reaches out with hand controllers",
+    "cap": "A student exploring a virtual space with a VR headset and controllers."
+   },
+   "cm": {
+    "anim": "spectrum"
+   },
+   "deep": [
+    {
+     "k": "Virtual reality",
+     "h": "What VR looks like",
+     "media": {
+      "img": "vr-gear",
+      "alt": "A standalone VR headset with two hand controllers on a desk",
+      "cap": "A standalone VR headset and its two hand controllers."
+     },
+     "p": [
+      "A VR headset has two small screens, one for each eye, behind lenses that make the image fill your view. Sensors track your head so the world moves naturally when you look around.",
+      "The controllers track your hands. Many headsets can also follow your bare hands with cameras, so you can pinch and grab without controllers."
+     ],
+     "defs": [
+      [
+       "1",
+       "Headset",
+       "Screens, lenses, speakers and tracking cameras in one unit."
+      ],
+      [
+       "2",
+       "Controllers",
+       "Buttons, triggers and vibration (haptics) for your hands."
+      ],
+      [
+       "3",
+       "Play space",
+       "A safe, clear area you mark out so you don't walk into furniture."
+      ]
+     ]
+    },
+    {
+     "k": "Augmented reality",
+     "h": "What AR looks like",
+     "media": {
+      "img": "ar-phone",
+      "alt": "A phone shows a virtual armchair placed in a real living room",
+      "cap": "AR on a phone: a virtual chair placed in a real room."
+     },
+     "p": [
+      "You don't need a headset for AR. Your phone camera shows the real world and the app adds digital objects on top. Furniture previews, face filters and Pokémon GO all work this way."
+     ]
+    },
+    {
+     "k": "Mixed reality",
+     "h": "What MR looks like",
+     "media": {
+      "img": "mr-room",
+      "alt": "A person in a mixed reality headset sees floating app windows in their living room",
+      "cap": "Mixed reality: digital windows and objects placed in a real room."
+     },
+     "p": [
+      "A mixed reality headset shows your real room through cameras, then places digital windows and 3D objects in it. Those objects stay anchored, so a virtual screen stays on your wall even when you walk away."
+     ]
+    }
+   ],
+   "w": [
+    "What is VR, AR and MR?",
+    "vr ar mr differences explained for beginners"
+   ]
+  },
+  "xr-spatial": {
+   "hero": {
+    "img": "vr-museum",
+    "alt": "View from inside a VR museum with a floating menu and virtual hands",
+    "cap": "Inside VR: a floating menu placed within easy reach."
+   },
+   "cm": {
+    "anim": "comfort"
+   },
+   "w": [
+    "Spatial UI design basics",
+    "spatial ui design vr principles"
+   ]
+  },
+  "xr-proto": {
+   "hero": {
+    "img": "xr-build",
+    "alt": "A student builds a 3D scene on a laptop with a VR headset beside it",
+    "cap": "Build on a laptop, test in the headset."
+   },
+   "w": [
+    "Prototyping VR in ShapesXR",
+    "shapesxr tutorial beginner"
+   ]
+  },
+  "xr-games": {
+   "hero": {
+    "img": "gaming",
+    "alt": "Two students play a colourful platformer game on a TV",
+    "cap": "Good games teach their rules through play."
+   },
+   "w": [
+    "Game UX basics",
+    "game ux design celia hodent"
+   ]
+  },
+  "xr-voice": {
+   "hero": {
+    "img": "voice-car",
+    "alt": "A driver keeps hands on the wheel while speaking a voice command",
+    "cap": "Voice keeps eyes on the road and hands on the wheel."
+   },
+   "cm": {
+    "anim": "voice"
+   },
+   "w": [
+    "Voice interface design",
+    "voice user interface design basics"
+   ]
+  }
+ },
+ "topics": {
+  "dt": "Design thinking",
+  "gestalt": "Gestalt",
+  "laws": "UX laws",
+  "ai": "AI",
+  "xr": "XR & games",
+  "gen": "General UX"
+ },
+ "types": {
+  "video": "Videos",
+  "article": "Articles",
+  "course": "Courses",
+  "guide": "Guides",
+  "tool": "Tools",
+  "book": "Books"
+ },
+ "categories": [
+  "Research",
+  "Visual",
+  "Interaction",
+  "Process",
+  "AI",
+  "XR"
+ ],
+ "animCaptions": {
+  "dtloop": [
+   "Empathize: understand the people you design for",
+   "Define: frame the right problem",
+   "Ideate: generate many possible ideas",
+   "Prototype: make ideas tangible",
+   "Test: learn from real users",
+   "Then loop back. Every test teaches you something new."
+  ],
+  "affinity": [
+   "Write every observation on its own note",
+   "Spot notes that share a theme",
+   "Move them into clusters",
+   "Name each cluster. These become your insights."
+  ],
+  "crazy8": [
+   "Fold a sheet into 8 panels and start an 8-minute timer",
+   "Idea 1: about one minute each. Sketch fast, keep it rough.",
+   "Idea 2: about one minute each. Sketch fast, keep it rough.",
+   "Idea 3: about one minute each. Sketch fast, keep it rough.",
+   "Idea 4: about one minute each. Sketch fast, keep it rough.",
+   "Idea 5: about one minute each. Sketch fast, keep it rough.",
+   "Idea 6: about one minute each. Sketch fast, keep it rough.",
+   "Idea 7: about one minute each. Sketch fast, keep it rough.",
+   "8 ideas in 8 minutes. Now share and dot-vote."
+  ],
+  "scamper": [
+   "Swap the login form for a student ID scan",
+   "Combine room booking with your class calendar",
+   "Adapt a restaurant waitlist for full study rooms",
+   "Show only the next free room, not a long list",
+   "Use booking data to show the quietest times",
+   "Drop the confirmation email and show a QR pass",
+   "Let free rooms notify nearby students"
+  ],
+  "fidelity": [
+   "Low fidelity: a quick sketch. Is the idea understandable?",
+   "Mid fidelity: a grey-box wireframe. Is the layout right?",
+   "High fidelity: styled and clickable. Does it feel right?"
+  ],
+  "users": [
+   "Test with 1 user and you find about 31% of usability problems",
+   "2 users: about 52%",
+   "3 users: about 67%",
+   "4 users: about 77%",
+   "5 users: about 85%. Fix what you found, then test again with five more."
+  ],
+  "proximity": [
+   "Sixteen evenly spaced dots read as one block",
+   "Add space between rows and you see two groups of rows",
+   "Move the space between columns and you see two groups of columns"
+  ],
+  "similarity": [
+   "Same colour everywhere: just a grid",
+   "Colour alternate columns and you see columns",
+   "Colour alternate rows and the grid becomes rows"
+  ],
+  "closure": [
+   "Three circles",
+   "Cut a wedge from each one…",
+   "…and your brain draws a triangle that isn't there"
+  ],
+  "fitts": [
+   "One cursor, two targets",
+   "Large and close: fast and hard to miss",
+   "Back to the start…",
+   "Small and far: slower, and easier to miss"
+  ],
+  "hicks": [
+   "2 options: a quick decision",
+   "6 options: noticeably slower",
+   "12 options: people hesitate. Group or hide what is rarely needed."
+  ],
+  "miller": [
+   "Ten digits in a row are hard to hold in memory",
+   "Split into three chunks, the same digits are easy to remember"
+  ],
+  "spectrum": [
+   "Real world: an ordinary room with a desk",
+   "AR: digital information appears on top of the real room, usually through a phone",
+   "MR: a digital object sits on the real desk and stays anchored there",
+   "VR: the real room disappears and you are inside a fully digital world"
+  ],
+  "comfort": [
+   "Too close: hard to focus on and uncomfortable",
+   "Too far to the side: users have to turn their head",
+   "In front, at a comfortable distance: easy to read and reach"
+  ],
+  "prompt": [
+   "A vague prompt gets generic ideas back",
+   "Role: tell the AI who to be",
+   "Context: give it your real research",
+   "Task: say exactly what you need",
+   "Constraints: set limits on length and number",
+   "Format: say how to return it. Now the output is useful."
+  ],
+  "voice": [
+   "Voice is fast for simple commands",
+   "A short confirmation tells the driver it worked",
+   "Names are easy to mishear…",
+   "…so offer choices instead of guessing"
+  ],
+  "scamperWords": [
+   [
+    "Substitute",
+    "What could you replace?"
+   ],
+   [
+    "Combine",
+    "What could you merge?"
+   ],
+   [
+    "Adapt",
+    "What could you borrow from elsewhere?"
+   ],
+   [
+    "Modify",
+    "What could be bigger or smaller?"
+   ],
+   [
+    "Put to other use",
+    "Where else could this work?"
+   ],
+   [
+    "Eliminate",
+    "What could you remove?"
+   ],
+   [
+    "Reverse",
+    "What if you flipped the order?"
+   ]
+  ]
+ },
+ "diagramCaptions": {}
+}
